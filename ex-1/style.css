@@ -1,7 +1,35 @@
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+/* 1. ประกาศตัวแปร CSS Variables ตามข้อมูลในตารางดีไซน์ */
+:root {
+  /* Color Tokens */
+  --color-branding: #ff7f50;
+  --color-secondary: cornsilk;
+  --color-highlight: #d2691e;
+  --color-muted: #a9a9a9;
+
+  /* Spacing / Padding Tokens */
+  --margin-level-1: 1px;
+  --margin-level-2: 5px;
+  --margin-level-3: 10px;
+  --margin-level-4: 15px;
+  --margin-level-5: 20px;
+
+  /* Font Size Tokens */
+  --font-size-small: 12px;
+  --font-size-medium: 16px;
+  --font-size-large: 20px;
+  --font-size-xlarge: 30px;
+  --font-size-xxlarge: 50px;
+  --font-size-xxxlarge: 100px;
 }
 
-/* Start coding here */
+/* 2. กำหนดสไตล์ให้กับ .introduction ตาม Requirement */
+.introduction {
+  background-color: var(--color-secondary); /* สีพื้นหลังเป็นสี Secondary */
+  padding: var(--margin-level-5);           /* ขนาดของ Padding เป็น Level 5 */
+}
+
+/* 3. กำหนดสไตล์ให้กับ h1 ที่อยู่ภายใต้ .introduction */
+.introduction h1 {
+  color: var(--color-branding);             /* สีตัวอักษรเป็นสี Branding */
+  font-size: var(--font-size-xxxlarge);     /* ขนาดของตัวอักษรเป็น Triple Extra Large (100px) */
+}
